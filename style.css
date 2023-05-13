@@ -8,6 +8,7 @@
 
 :root {
     --accent: #EA5959;
+    --default: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -17,6 +18,8 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    font-style: 18px;
+    font-weight: 300;
 }
 
 .todo {
@@ -42,4 +45,43 @@ a {
     text-decoration: none;
     color: black;
     margin: 20px 0;
+}
+
+.todo-list {
+    background-color:bisque;
+    padding: 0 32px;
+}
+
+.todo-title {
+}
+
+.todo-new {
+    --size: 50px;
+    display: flex;
+    padding: 16px 0 32px;
+}
+
+.todo-new input {
+    margin-right: 16px;
+    font-size: 18px;
+    padding: 8px 16px;
+    height: var(--size);
+    border: 0.5px solid var(--default);
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.todo-add {
+    text-align: center;
+    height: var(--size);
+    width: var(--size);
+    line-height: var(--size);
+    border: 0.5px solid var(--default);
+    border-radius: var(--size);
+    line-height: calc(var(--size) * 0.95);
+    background-color: var(--accent);
+    color:rgb(221, 221, 221);
+    font-size: 32px;
+    font-weight: 200;
+    cursor: pointer;
 }
